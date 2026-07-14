@@ -26,26 +26,26 @@ When the user opens a new note in the reviewer, it gets opened on the same custo
 
 ## Examples of some queries
 
-LIST WITHOUT ID file.name
+- LIST WITHOUT ID file.name
 
-LIST WITHOUT ID file.name FROM "folder name"
+- LIST WITHOUT ID file.name FROM "folder name"
 
-LIST WITHOUT ID file.name FROM #tag
+- LIST WITHOUT ID file.name FROM #tag
 
-LIST WITHOUT ID file.name FROM "folder name" AND (#tag/subtag1 OR #tag/subtag2)
+- LIST WITHOUT ID file.name FROM "folder name" AND (#tag/subtag1 OR #tag/subtag2)
 
-LIST WITHOUT ID file.name WHERE property_name = "property_value"
+- LIST WITHOUT ID file.name WHERE property_name = "property_value"
 
-LIST WITHOUT ID file.name WHERE file.mtime >= date(today) - dur(1 week)
+- LIST WITHOUT ID file.name WHERE file.mtime >= date(today) - dur(1 week)
 
-LIST WITHOUT ID file.name SORT file.ctime ASC
+- LIST WITHOUT ID file.name SORT file.ctime ASC
 
-LIST WITHOUT ID file.name LIMIT 100
+- LIST WITHOUT ID file.name LIMIT 100
 
-LIST WITHOUT ID file.name FROM [[Target Note]] //all files which links to target note
+- LIST WITHOUT ID file.name FROM [[Target Note]] //all files which links to target note
 
-LIST WITHOUT ID file.name FROM outgoing([[Target Note]]) //all links contained in target note
+- LIST WITHOUT ID file.name FROM outgoing([[Target Note]]) //all links contained in target note
 
-LIST WITHOUT ID file.name WHERE contains(file.outlinks, [[Target Note]]) //same but as a filter
+- LIST WITHOUT ID file.name WHERE contains(file.outlinks, [[Target Note]]) //same but as a filter
 
-LIST WITHOUT ID link(file.link, dateformat(file.ctime, "yyyy-MM-dd")) //custom links names, for example creation date, instead than the note's name (useful if the note's title would give away the answer during review)
+- LIST WITHOUT ID link(file.link, dateformat(file.ctime, "yyyy-MM-dd")) //custom links names, for example creation date, instead than the note's name (useful if the note's title would give away the answer during review)
