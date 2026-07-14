@@ -3,6 +3,10 @@
 A plugin that I did for myself with the massive help of AI.
 Because of that the source is still a mess, and I plan to rewrite it from scratch in the future.
 
+To try the plugin, simply download the files "main.js" and "manifest.json" from GitHub, and put them inside [your_vault]\.obsidian\plugins\lazy-reviewer\
+
+I hope someone with good coding skills will like the idea of this plugin and will adopt it.
+
 The plugin needs DATAVIEW.
 It can get DATAVIEW queries through a custom command (CTRL+P > Lazy Reviewer: Dataview Query).
 The query result is shown as a list of clickable notes on the left panel.
