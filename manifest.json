@@ -1,0 +1,11 @@
+{
+	"id": "lazy-reviewer",
+	"name": "Lazy Reviewer",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "",
+	"author": "Karapponkotsu",
+	"authorUrl": "https://github.com/karapponkotsu",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}
