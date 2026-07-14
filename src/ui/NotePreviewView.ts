@@ -60,19 +60,15 @@ export class NotePreviewView extends ItemView {
         const panel = this.contentEl.createEl('div', { cls: 'review-bottom-panel' });
 
         Object.assign(panel.style, {
-            position: 'fixed',
-            bottom: '0',
-            left: '0',
-            right: '0',
-            background: 'var(--background-primary)',
-            borderTop: '1px solid var(--background-modifier-border)',
-            padding: '12px 8px 28px 8px',
+            marginTop: '40px',
+            padding: '20px 10px',
+            borderTop: '2px solid var(--background-modifier-border)',
             display: 'flex',
             justifyContent: 'center',
-            gap: '8px',
+            gap: '12px',
             flexWrap: 'wrap',
-            zIndex: '100',
-            boxShadow: '0 -2px 8px rgba(0,0,0,0.1)'
+            background: 'var(--background-primary)',
+            borderRadius: '6px'
         });
 
         if (showReveal) {
